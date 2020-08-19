@@ -118,6 +118,25 @@ div{
 	list-style: none;
 }
 
+/*test couleur barre progression*/
+#file{
+	padding-right: 10px;
+    font-size: 1rem;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #d0826f;
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
 /*mise en page valeur et centre interets*/
 .inside{
 	list-style-position: inside;
