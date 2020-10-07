@@ -30,7 +30,7 @@ h3{
 	color: #d0826f;
 }
 
-
+/*--flex 1--*/
 header{
 	display: flex;
 	flex-wrap: wrap;
@@ -76,7 +76,7 @@ header{
 	margin: 40px 10px 10px 10px;
 }
 
-
+/*--flex 2--*/
 /*partie principale*/
 main{
 	display: flex;
@@ -90,6 +90,7 @@ main{
 	margin: 30px 10px 10px 10px;
 }
 
+/*--flex 2-1--*/
 aside{
 	position: relative;
 	width: 30%;
@@ -142,6 +143,7 @@ progress[value]::-webkit-progress-value {
 	list-style-position: inside;
 }
 
+/*--flex 2-2--*/
 /*FORMATIONS ET EXPERIENCES*/
 .formations-experiences{
 	position: relative;
@@ -182,12 +184,26 @@ progress[value]::-webkit-progress-value {
 	margin: 5px 5px 5px 5px;
 }
 
+/*--flex 2-21--*/
+footer{
+
+}
+
+
+
+
+/*******************************************/
 
 /* For desktop: */
 @media only screen and (max-width: 1200px) {
 	aside {width: 30%;}
 	.formations-experiences {width: 70%;}
 	img{max-width: 100%;height: auto;}
+
+	* {  box-sizing: border-box;}
+
+
+
 }
 
  /* For mobile phones: */
