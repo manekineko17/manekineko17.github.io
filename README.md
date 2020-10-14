@@ -1,4 +1,7 @@
 # manekineko17.github.io
 CV Marine Grouiller
 
-=> responsive en construction
+First HTML CSS project.
+This resume is based on my paper resume.
+
+=> responsive under construction ;)
