@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
 
-* {  box-sizing: border-box;}
-
+/** {  box-sizing: border-box;}*/
+html{
+	/*width: 100%;*/
+}
 body{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	max-width: 100%;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #000000;
 	background-image: url("images/fond_CV.png");
 	background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: justify-all;
+    /*background-size: 120%;*/
+    background-position: top;
+    /*text-align: justify-all;*/
 }
 
 ul { margin:10;
@@ -32,22 +43,30 @@ h3{
 
 /*--flex 1--*/
 header{
+	flex: 1;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	padding: 10px 10px 10px 10px;
 	margin: 10px 10px 30px 10px;
+	box-sizing: border-box;
 }
 
-.identite{
-	position:relative;
-	height: 400px;
+.photo_identite > img{
+	width: 200px;
 	border-radius: 50%;
-	padding: 10px 10px 5px 10px;
-	margin: 70px 10px 5px 100px;
+	padding: 15%;
+	margin: 10%;
+	align-items: center;
+	align-content: center;
 }
 
+/*logo mail git linkedin*/
 .logo{
 	position:relative;
 	height: 40px;
@@ -63,8 +82,8 @@ header{
 .titre_CV{
 	text-align: center;
 	color: #d0826f;
-	padding: 20px;
-	margin: 30px;
+	/*padding: 20px;*/
+	/*margin: 30px;*/
 }
 
 .resume{
@@ -72,31 +91,34 @@ header{
 	text-align: center;
 	line-height: 25px;
 	font-size: 25px;
-	padding: 20px 10px 10px 10px;
-	margin: 40px 10px 10px 10px;
+	/*padding: 20px 10px 10px 10px;*/
+	/*margin: 40px 10px 10px 10px;*/
 }
 
 /*--flex 2--*/
 /*partie principale*/
 main{
+	flex:2;
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
-	float: left;
-	align-content: space-around;
-	height: 100%;
-	padding: 10px 10px 10px 10px;
-	margin: 30px 10px 10px 10px;
+	/*float: left;*/
+	/*align-content: space-around;*/
+	/*height: 100%;*/
+	/*padding: 10px 10px 10px 10px;*/
+	/*margin: 30px 10px 10px 10px;*/
 }
 
 /*--flex 2-1--*/
 aside{
-	position: relative;
-	width: 30%;
-	float: left;
-	height: 100%;
-	text-align: left;
+	/*flex-wrap: wrap;*/
+	/*position: relative;*/
+	width: 100%;
+	display: inline-block;
+	/*float: left;*/
+	/*height: 100%;*/
+	/*text-align: left;*/
     background-color: lightgrey;
     line-height: 20px;
     padding: 10px 10px 10px 10px;
@@ -105,8 +127,8 @@ aside{
 
 /*div dans aside*/
 div{
-	padding: 5px 5px 5px 5px;
-	margin: 5px 5px 5px 5px;
+	/*padding: 5px 5px 5px 5px;*/
+	/*margin: 5px 5px 5px 5px;*/
 }
 
 /*nom prenom*/
@@ -146,10 +168,12 @@ progress[value]::-webkit-progress-value {
 /*--flex 2-2--*/
 /*FORMATIONS ET EXPERIENCES*/
 .formations-experiences{
+	flex-wrap: wrap;
 	position: relative;
-    width: 100%
-    float: left;
-    height:100%;
+    width: 100%;
+    display: inline-block;
+    /*float: left;*/
+    /*height:100%;*/
     justify-content: flex-start;
     padding: 10px 10px 10px 10px;
 	margin: 10px 10px 10px 10px;
@@ -186,6 +210,10 @@ progress[value]::-webkit-progress-value {
 
 /*--flex 2-21--*/
 footer{
+	flex:3;
+	/*flex-wrap: wrap;*/
+	/*flex-direction: */
+
 
 }
 
@@ -194,22 +222,30 @@ footer{
 
 /*******************************************/
 
-/* For desktop: */
-@media only screen and (max-width: 1200px) {
-	aside {width: 30%;}
+/*mobile :on screens that are 375px or less*/
+@media screen and (max-width: 375px) { 
+/*	aside{font-size: 120%;width: 100%;}
+	.main {font-size: 120%;width: 100%;}
+	.titre_resume {font-size: 120%;width: 100%;}
+	.formations-experiences {font-size: 120%;width: 100%;}*/
+}
+
+
+
+/*tablette :on screens that are min 376px, set the followings*/
+@media screen and (max-width: 1094px) and (min-width: 834px) {
+
+}
+
+/*desktop: on screens that are 1094px or more, set the followings */
+@media screen and (min-width: 1094px) {
+/*	aside {width: 30%;}
 	.formations-experiences {width: 70%;}
 	img{max-width: 100%;height: auto;}
 
-	* {  box-sizing: border-box;}
+	* {  box-sizing: border-box;}*/
 
 
 
 }
 
- /* For mobile phones: */
-@media only screen and (max-width: 300px) {
-	aside{font-size: 120%;width: 100%;}
-	.main {font-size: 120%;width: 100%;}
-	.titre_resume {font-size: 120%;width: 100%;}
-	.formations-experiences {font-size: 120%;width: 100%;}
-}
