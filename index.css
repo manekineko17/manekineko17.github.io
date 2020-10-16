@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
 
-/** {  box-sizing: border-box;}*/
-html{
-	/*width: 100%;*/
-}
 body{
 	display: flex;
 	flex-direction: column;
@@ -12,15 +8,12 @@ body{
 	align-items: center;
 	align-content: center;
 	max-width: 100%;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #000000;
 	background-image: url("images/fond_CV.png");
 	background-repeat: no-repeat;
-    /*background-size: 120%;*/
     background-position: top;
-    /*text-align: justify-all;*/
 }
 
 ul { margin:10;
@@ -51,7 +44,6 @@ header{
 	align-items: center;
 	align-content: center;
 	width: 100%;
-	/*height: 100%;*/
 	padding: 10px 10px 10px 10px;
 	margin: 10px 10px 30px 10px;
 	box-sizing: border-box;
@@ -62,8 +54,6 @@ header{
 	border-radius: 50%;
 	padding: 5%;
 	margin: 5%;
-	/*align-items: center;*/
-	/*align-content: center;*/
 }
 
 /*logo mail git linkedin*/
@@ -76,9 +66,6 @@ header{
 	position: -webkit-sticky;
 	position:relative;
 	text-align: center;
-	/*flex-wrap: wrap;*/
-	/*top: 10%;*/
-	/*left: 120px;*/
 }
 
 .titre_CV{
@@ -104,28 +91,16 @@ main{
 	flex:2;
 	display: flex;
 	flex-wrap: wrap;
-	/*position: relative;*/
 	width: 100%;
-	/*float: left;*/
-	/*align-content: space-around;*/
-	/*height: 100%;*/
-	/*padding: 10px 10px 10px 10px;*/
-	/*margin: 30px 10px 10px 10px;*/
 }
 
 /*--flex 2-1--*/
 aside{
-	/*flex-wrap: wrap;*/
-	/*position: relative;*/
 	width: 100%;
-	display: inline-block;
-	/*float: left;*/
-	/*height: 100%;*/
-	/*text-align: left;*/
     background-color: lightgrey;
     line-height: 20px;
-    padding: 10px 10px 10px 10px;
-	margin: 10px 10px 10px 10px;
+    padding: 10%;
+	margin: 5%;
 }
 
 /*div dans aside*/
@@ -162,7 +137,6 @@ progress[value]::-webkit-progress-value {
     background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
-
 /*mise en page valeur et centre interets*/
 .inside{
 	list-style-position: inside;
@@ -175,21 +149,16 @@ progress[value]::-webkit-progress-value {
 	position: relative;
     width: 100%;
     display: inline-block;
-    /*float: left;*/
-    /*height:100%;*/
     justify-content: flex-start;
     padding: 10px 10px 10px 10px;
 	margin: 10px 10px 10px 10px;
 	list-style-position: outside;
-    /*border: 2px solid purple;*/
 }
 
 .h2-form-exp{
 	font-weight: bold;
 	text-align: center;
 }
-
-
 
 /*mise en page 1ere ligne <li> */
 .sous-titre{
@@ -203,7 +172,6 @@ progress[value]::-webkit-progress-value {
 	list-style-position: inside;
 }
 
-
 .h3-aside{
 	text-align: center;
 	color: #d0826f;
@@ -214,41 +182,121 @@ progress[value]::-webkit-progress-value {
 /*--flex 2-21--*/
 footer{
 	flex:3;
-	/*flex-wrap: wrap;*/
-	/*flex-direction: */
-
-
 }
-
-
 
 
 /*******************************************/
 
 /*mobile :on screens that are 375px or less*/
 @media screen and (max-width: 375px) { 
-/*	aside{font-size: 120%;width: 100%;}
-	.main {font-size: 120%;width: 100%;}
-	.titre_resume {font-size: 120%;width: 100%;}
-	.formations-experiences {font-size: 120%;width: 100%;}*/
 }
 
+/****************************************************/
 
-
-/*tablette :on screens that are min 376px, set the followings*/
+/*tablet :on screens that are min 376px, set the followings*/
 @media screen and (max-width: 1094px) and (min-width: 834px) {
-
+	body{font-size: 20px;}
+	.photo_identite > img{
+		width: 450px;
+		padding: 5% 10% 5% 10%;
+		margin: 5% 10% 5% 12%;
+	}
+	.resume{
+		line-height: 35px;
+		font-size: 30px;
+	}
+	aside{
+		line-height: 25px;
+	    padding: 5%;
+	}
+	.h3-aside{
+		padding: 2%;
+		margin: 2%;
+		font-size: 30px;
+	}
+	.formations-experiences{
+		padding: 5%;
+		margin: 2%;
+	}
+	
 }
+
+/****************************************************/
 
 /*desktop: on screens that are 1094px or more, set the followings */
 @media screen and (min-width: 1094px) {
 /*	aside {width: 30%;}
 	.formations-experiences {width: 70%;}
-	img{max-width: 100%;height: auto;}
+	img{max-width: 100%;height: auto;}*/
 
-	* {  box-sizing: border-box;}*/
+	body{
+	    font-size: 25px;
+	}
+	ul { margin:10;
+	     padding:10;
+	}
+	hr{
+		width:60%;
+	}
+	.photo_identite > img{
+		width: 500px;
+		padding: 5%;
+		margin: 2%;
+	}
 
+	.logo{
+		height: 50px;
+	}
 
+	.titre_CV{
+		padding: 20px;
+		margin: 30px;
+	}
+
+	.resume{
+		/*line-height: 25px;*/
+		font-size: 35px;
+
+		padding: 10px 20px 10px 20px;
+		margin: 10px 20px 10px 20px;
+	}
+	main{
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+	aside{
+		width: 30%;
+		font-size: 20px;
+		float: left;
+		padding: 2%;
+		margin: 2%;
+	}
+
+	/*div dans aside*/
+	div{
+		line-height: 30px;
+		padding: 3%;
+	    margin:3%;
+	}
+
+		.formations-experiences{
+	    width: 60%;
+	    font-size: 20px;
+	    float: right;
+	    padding: 2%;
+		margin: 2%;
+	}
+	.liste_description{
+		padding: 1%;
+		margin: 1%;
+	}
+
+	article > div{
+		padding: 1%;
+		margin: 1%;
+	}
 
 }
 
+/*id : utilisé une seule fois
+class: le même nom utilisable plusieurs fois*/
