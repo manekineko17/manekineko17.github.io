@@ -29,12 +29,11 @@ hr{
 	text-align: center;
 }
 
-h3{
-	text-align: left;
+h2{
+	text-align: center;
 	color: #d0826f;
 }
 
-/*--flex 1--*/
 header{
 	flex: 1;
 	display: flex;
@@ -49,7 +48,7 @@ header{
 	box-sizing: border-box;
 }
 
-.photo_identite > img{
+#photo_identite > img{
 	width: 300px;
 	border-radius: 50%;
 	padding: 5%;
@@ -62,30 +61,28 @@ header{
 	height: 40px;
 }
 
-.titre_resume{
+#titre_CV{
 	position: -webkit-sticky;
 	position:relative;
 	text-align: center;
-}
-
-.titre_CV{
 	text-align: center;
 	color: #d0826f;
 	padding: 20px;
 	margin: 30px;
 }
 
-.resume{
+#resume{
+	position: -webkit-sticky;
+	position:relative;
+	text-align: center;
 	font-style: italic;
 	text-align: center;
 	line-height: 25px;
 	font-size: 25px;
-
 	padding: 10px 20px 10px 20px;
 	margin: 10px 20px 10px 20px;
 }
 
-/*--flex 2--*/
 /*partie principale*/
 main{
 	flex:2;
@@ -94,7 +91,6 @@ main{
 	width: 100%;
 }
 
-/*--flex 2-1--*/
 aside{
 	width: 100%;
     background-color: lightgrey;
@@ -110,17 +106,16 @@ div{
 }
 
 /*nom prenom*/
-.presentation{
+#presentation{
 	text-align: center;
 }
 
-/*mise en page asso*/
-.asso{
+#asso{
 	list-style: none;
 }
 
-/*test couleur barre progression*/
-#file{
+/*couleur barre progression*/
+.file{
 	padding-right: 10px;
     font-size: 1rem;
 }
@@ -142,7 +137,6 @@ progress[value]::-webkit-progress-value {
 	list-style-position: inside;
 }
 
-/*--flex 2-2--*/
 /*FORMATIONS ET EXPERIENCES*/
 .formations-experiences{
 	flex-wrap: wrap;
@@ -172,14 +166,13 @@ progress[value]::-webkit-progress-value {
 	list-style-position: inside;
 }
 
-.h3-aside{
+.h2-aside{
 	text-align: center;
 	color: #d0826f;
 	padding: 5px 5px 5px 5px;
 	margin: 5px 5px 5px 5px;
 }
 
-/*--flex 2-21--*/
 footer{
 	flex:3;
 }
@@ -191,17 +184,28 @@ footer{
 @media screen and (max-width: 375px) { 
 }
 
-/****************************************************/
 
 /*tablet :on screens that are min 376px, set the followings*/
 @media screen and (max-width: 1094px) and (min-width: 834px) {
 	body{font-size: 20px;}
-	.photo_identite > img{
-		width: 450px;
-		padding: 5% 10% 5% 10%;
-		margin: 5% 10% 5% 12%;
+
+	#titre{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: flex-start;
+		align-content: center;
+	/*	padding: 0%;
+		margin: 0%;*/
 	}
-	.resume{
+
+	#photo_identite > img{
+		width: 350px;
+		padding-left: 5%;
+		margin-left: 20%;
+	}
+	#resume{
 		line-height: 35px;
 		font-size: 30px;
 	}
@@ -209,7 +213,7 @@ footer{
 		line-height: 25px;
 	    padding: 5%;
 	}
-	.h3-aside{
+	.h2-aside{
 		padding: 2%;
 		margin: 2%;
 		font-size: 30px;
@@ -225,41 +229,45 @@ footer{
 
 /*desktop: on screens that are 1094px or more, set the followings */
 @media screen and (min-width: 1094px) {
-/*	aside {width: 30%;}
-	.formations-experiences {width: 70%;}
-	img{max-width: 100%;height: auto;}*/
+	body{font-size: 25px;}
 
-	body{
-	    font-size: 25px;
-	}
 	ul { margin:10;
-	     padding:10;
-	}
-	hr{
-		width:60%;
-	}
-	.photo_identite > img{
-		width: 500px;
-		padding: 5%;
+	     padding:10;}
+
+	hr{width:60%;}
+
+	#photo_identite > img{
+		width: 450px;
+		float: left;
+		padding: 2%;
 		margin: 2%;
 	}
 
-	.logo{
-		height: 50px;
+	.logo{height: 50px;}
+
+	#titre{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: center;
+		padding: 2%;
+		margin: 1%;
 	}
 
-	.titre_CV{
+	#titre_CV{
 		padding: 20px;
 		margin: 30px;
+		line-height: 65px;
 	}
 
-	.resume{
-		/*line-height: 25px;*/
+	#resume{
 		font-size: 35px;
-
 		padding: 10px 20px 10px 20px;
 		margin: 10px 20px 10px 20px;
 	}
+
 	main{
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -279,7 +287,7 @@ footer{
 	    margin:3%;
 	}
 
-		.formations-experiences{
+	.formations-experiences{
 	    width: 60%;
 	    font-size: 20px;
 	    float: right;
@@ -295,7 +303,6 @@ footer{
 		padding: 1%;
 		margin: 1%;
 	}
-
 }
 
 /*id : utilisé une seule fois

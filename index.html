@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css" />
-    <title>CV Marine Grouiller</title>
+    <title>CV Marine Grouiller Web developer</title>
 </head>
 
 <body>
@@ -12,23 +12,23 @@
 	<!--flex 1-->
 	<header>
 
-		<div class="photo_identite">
-			<img  src="images/photo_marine.jpg" width="100% >
-		</div>
+		<div id="titre">
+			<div id="photo_identite">
+				<img  src="images/photo_marine.jpg">
+			</div>
 
-		<div class="titre_resume">
-			<div class="titre_CV">
+			<div id="titre_CV">
 				<hr>
 				<h1>DÉVELOPPEUSE WEB JUNIOR</h1>
 				<hr>
 			</div>
+		</div>
 
-			<div class="resume">
-				<p>Recherche un stage du 26 nov au 23 déc 2020</p>
-				
-				<p>En formation Développeuse web Javascript jusqu'à fin mars 2021</p>
+		<div id="resume">
+			<p>Recherche un stage du 26 nov au 23 déc 2020</p>
+			
+			<p>En formation Développeuse web Javascript jusqu'à fin mars 2021</p>
 
-			</div>
 		</div>
 		
 	</header>
@@ -36,16 +36,15 @@
 	<!--flex 2 -->
 	<main>
 
-		<!--flex 2-1-->
 		<!--Informations personnelles-->
 		<aside>
 
-			<div class="presentation">
+			<div id="presentation">
 		 		<h2>Marine Grouiller</h2>
 		
 				<p>44000 Nantes</p>
 				<p>Permis B, roule à vélo</p>
-				<p> Mobile Nantes et communes proches</p>
+				<p>Mobile Nantes et communes proches</p>
 
 				<a href="mailto:mgrouiller@gmail.com"><img class="logo" src="images/gmail.png"></a>
 
@@ -57,7 +56,7 @@
 		 			
 			<div>
 				<hr>
-				<h3 class="h3-aside">Compétences</h3>
+				<h2 class="h2-aside">Compétences</h2>
 				<hr>
 					<ul>
 						<li class="sous-titre">Numérique</li>
@@ -70,9 +69,9 @@
 						<li class="sous-titre">Langues étrangères</li>
 							<ul>
 								<li>Anglais</li>
-									<progress id="file" max="100" value="95"> 95% </progress>
+									<progress class="file" max="100" value="95"> 95% </progress>
 								<li>Japonais</li>
-									<progress id="file" max="100" value="70"> 70% </progress>
+									<progress class="file" max="100" value="70"> 70% </progress>
 							</ul>
 							<br>
 						<li class="sous-titre">Compétences transversales</li>
@@ -92,7 +91,7 @@
 
 			<div>
 				<hr>
-				<h3 class="h3-aside">Valeurs</h3>
+				<h2 class="h2-aside">Valeurs</h2>
 				<hr>
 				<ul>
 					<li class="inside">Respect</li>
@@ -106,31 +105,35 @@
 
 
 			<div>
-				<hr> <h3 class="h3-aside">Bénévolat</h3> <hr>
-					<ul>
-						<li class="sous-titre">AJFJ(Association Jeunesse France Japon).</li>
-						<li class="asso">Association qui promeut la culture japonaise, avec environ 140 membres.</li>
-						<br>
-							<ul>
-								<li class="sous-titre">Depuis 2016 :</li>
-									<ul>
-										<li> Co-responsable Pôle Japon</li>
-										<li> Membre du Conseil d'aministration.</li>
-									</ul>
-									<br>
-								<li class="sous-titre">Mes missions :</li>
-									<ul>
-										<li>Organisation d'ateliers de culture traditionnelle faisant intervenir des bénévoles ou des prestataires (calligraphie, bonsaï, thé, origami...)</li>
-										<li>Animation d'ateliers  sur l'art du Kimono et les jeux traditionnels, conseils pour pour des voyages touristiques au Japon</li>
-									</ul>
-							</ul>
+				<hr>
+				<h2 class="h2-aside">Bénévolat</h2>
+				<hr>
+
+				<ul>
+					<li class="sous-titre">AJFJ(Association Jeunesse France Japon).</li>
+					<li id="asso">Association qui promeut la culture japonaise, avec environ 140 membres.</li>
+					<br>
+						<ul>
+							<li class="sous-titre">Depuis 2016 :</li>
+								<ul>
+									<li> Co-responsable Pôle Japon</li>
+									<li> Membre du Conseil d'aministration.</li>
+								</ul>
+								<br>
+							<li class="sous-titre">Mes missions :</li>
+								<ul>
+									<li>Organisation d'ateliers de culture traditionnelle faisant intervenir des bénévoles ou des prestataires (calligraphie, bonsaï, thé, origami...)</li>
+									<li>Animation d'ateliers  sur l'art du Kimono et les jeux traditionnels, conseils pour pour des voyages touristiques au Japon</li>
+								</ul>
 						</ul>
+					</ul>
 			</div>
 
 			<div>
 				<hr>
-				<h3 class="h3-aside">Centres d'intérêts</h3>
+				<h2 class="h2-aside">Centres d'intérêts</h2>
 				<hr>
+
 				<ul>
 					<li class="inside">Kimono</li>
 					<li class="inside">Calligraphie japonaise</li>
@@ -143,8 +146,6 @@
 
 		</aside>
 
-
-		<!--flex 2-2-->
 		<!--Formations et expériences-->
 		<div class="formations-experiences">
 			
@@ -153,31 +154,32 @@
 				<hr>
 				<h2 class="h2-form-exp">FORMATIONS</h2>
 				<hr>
-			 		<div>
-			 			<h3>DEVELOPPEMENT WEB ET WEB MOBILE</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Formation #Codeuses, Ecole Informatique Simplon, Nantes (44) | Juillet 2020 - Mars 2021</li>
-					 			<li class="description"> Titre Développement web et web mobile de niveau III</li>
-					 		</ul>
-				 	</div>
 
-				 	<div>
-				 		<h3>DEVELOPPEMENT JAVA (POEC)</h3>
-				 			<ul class="liste_description">
-					 			<li class="sous-titre">ENI Ecole Informatique, Saint-Herblain (44) | Avril- Juillet 2020</li>
-					 			<li class="description">Formation intensive JAVA, SQL, JavaScript, JAVA EE, HTML, CSS. (Campus en ligne)</li>
-					 		</ul>
-					 </div>
-				 	
-				 	<div>	
-					 	<h3>MASTER 2 EN MANAGEMENT</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">ESC Dijon (21) | 2008 - 2013 Programme anglophone</li>
-					 			<li class="description">Échange universitaire à Taïwan : management, marketing, communication, cross-cultural
-				communication...</li>
-					 			<li class="description">Mémoire de master sur l'interculturalité en entreprise</li>
-					 		</ul>
-					 </div>
+		 		<div>
+		 			<h3>DEVELOPPEMENT WEB ET WEB MOBILE</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Formation #Codeuses, Ecole Informatique Simplon, Nantes (44) | Juillet 2020 - Mars 2021</li>
+				 			<li class="description"> Titre Développement web et web mobile de niveau III</li>
+				 		</ul>
+			 	</div>
+
+			 	<div>
+			 		<h3>DEVELOPPEMENT JAVA (POEC)</h3>
+			 			<ul class="liste_description">
+				 			<li class="sous-titre">ENI Ecole Informatique, Saint-Herblain (44) | Avril- Juillet 2020</li>
+				 			<li class="description">Formation intensive JAVA, SQL, JavaScript, JAVA EE, HTML, CSS. (Campus en ligne)</li>
+				 		</ul>
+				 </div>
+			 	
+			 	<div>	
+				 	<h3>MASTER 2 EN MANAGEMENT</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">ESC Dijon (21) | 2008 - 2013 Programme anglophone</li>
+				 			<li class="description">Échange universitaire à Taïwan : management, marketing, communication, cross-cultural
+			communication...</li>
+				 			<li class="description">Mémoire de master sur l'interculturalité en entreprise</li>
+				 		</ul>
+				 </div>
 			</article>
 
 			<!--Expériences-->
@@ -185,80 +187,82 @@
 				<hr>
 				<h2 class="h2-form-exp">EXPÉRIENCES</h2>
 				<hr>
-					<div>
-					 	<h3>Stages développement web | août et sept 2019</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">PMSMP découverte des métiers du numérique chez Logiroad (44)</li>
-					 			<li class="description"> Utilisation d'Angular et du tutoriel "The Tour of Heroes"</li>
-					 		</ul>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">"Digital Job Experience" chez Zenika lors de Nantes Digital Week</li>
-					 			<li class="description"> A partir d'un scénario fictif, en équipe, création d'un site : design thinking, prototypage, HTML, CSS</li>
-					 		</ul>
-					 </div>
 
-					 <div>
-					 	<h3>Chargée d'accueil et assistante administrative| mai 2019 - oct 2019</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Intérim chez Adecco et Kelly Services, Nantes (44) mai à août 2019</li>
-					 			<li class="description"> Accueil, gestion administrative, archivage</li>
-					 		</ul>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Espaces Formation, Nantes (44) sept - oct 2019</li>
-					 			<li class="description"> Accueil et gestion administrative</li>
-					 		</ul>
-					</div>
+				<div>
+				 	<h3>Stages développement web | août et sept 2019</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">PMSMP découverte des métiers du numérique chez Logiroad (44)</li>
+				 			<li class="description"> Utilisation d'Angular et du tutoriel "The Tour of Heroes"</li>
+				 		</ul>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">"Digital Job Experience" chez Zenika lors de Nantes Digital Week</li>
+				 			<li class="description"> A partir d'un scénario fictif, en équipe, création d'un site : design thinking, prototypage, HTML, CSS</li>
+				 		</ul>
+				 </div>
 
-					<div>
-					 	<h3>Conseillère clientèle - Entre 2014 et 2019</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Ima Technologies(500 salariés), Saint-Herblain (44) 18 mois (nov 2017-avril 2019)</li>
-					 			<li class="description"> Téléconseil et back-office, 4 donneurs d’ordre (location industrielle, automobile et écologie)</li>
-					 		</ul>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Pantashop (2 vendeurs), Saintes (17) 6 mois (nov 2014-fév 2015 et mai-août 2016)</li>
-					 			<li class="description"> Conseillère en magasin : gestion des stocks, merchandising, conseil en vente</li>
-					 		</ul>
-					</div>
+				 <div>
+				 	<h3>Chargée d'accueil et assistante administrative| mai 2019 - oct 2019</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Intérim chez Adecco et Kelly Services, Nantes (44) mai à août 2019</li>
+				 			<li class="description"> Accueil, gestion administrative, archivage</li>
+				 		</ul>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Espaces Formation, Nantes (44) sept - oct 2019</li>
+				 			<li class="description"> Accueil et gestion administrative</li>
+				 		</ul>
+				</div>
 
-					<div>
-					 	<h3>Attachée commerciale | nov 2016 - mai 2017</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Aerial Group (25 salariés), La Haie Fouassière (44)</li>
-					 			<li class="description"> Itinérante, vente de sites internet pour entrepreneurs, conseil, suivi (20 clients)</li>
-					 		</ul>
-					</div>
-				 		
-					<div>	
-					 	<h3>Employée hôtellerie-restauration | avril 2015 - avril 2016</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">Kyoto, Japon, Visa Vacances Travail</li>
-					 			<li class="description"> Employée en auberge de jeunesse, serveuse en restaurant</li>
-					 		</ul>
-					</div>
+				<div>
+				 	<h3>Conseillère clientèle - Entre 2014 et 2019</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Ima Technologies(500 salariés), Saint-Herblain (44) 18 mois (nov 2017-avril 2019)</li>
+				 			<li class="description"> Téléconseil et back-office, 4 donneurs d’ordre (location industrielle, automobile et écologie)</li>
+				 		</ul>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Pantashop (2 vendeurs), Saintes (17) 6 mois (nov 2014-fév 2015 et mai-août 2016)</li>
+				 			<li class="description"> Conseillère en magasin : gestion des stocks, merchandising, conseil en vente</li>
+				 		</ul>
+				</div>
 
-					<div>
-					 	<h3>Assistante - Entre 2010 et 2014</h3>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">TOURISME - Conseil Général de Charente Maritime, La Rochelle (17) 7 mois (étés 2011 et 2014)</li>
-					 			<li class="description"> Gestion stocks, plannings, logistique, diffusion des brochures touristiques</li>
-					 		</ul>	
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">PRESSE - Société Générale, La Défense (92) - 6 mois (juin - nov 2012)</li>
-					 			<li class="description"> Prises RDV avec les journalistes, rédaction communiqués de presse, organisation de conférences</li>
-					 		</ul>
-					 		<ul class="liste_description">
-					 			<li class="sous-titre">ÉVÉNEMENTIEL - Strategic Event, Dijon (21) - 6 mois (sept 2010-fév 2011)</li>
-					 			<li class="description"> Gestion plannings, facturation, organisation de stands de conventions, rédaction dossier client</li>
-					 		</ul>
-					 </div>
+				<div>
+				 	<h3>Attachée commerciale | nov 2016 - mai 2017</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Aerial Group (25 salariés), La Haie Fouassière (44)</li>
+				 			<li class="description"> Itinérante, vente de sites internet pour entrepreneurs, conseil, suivi (20 clients)</li>
+				 		</ul>
+				</div>
+			 		
+				<div>	
+				 	<h3>Employée hôtellerie-restauration | avril 2015 - avril 2016</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">Kyoto, Japon, Visa Vacances Travail</li>
+				 			<li class="description"> Employée en auberge de jeunesse, serveuse en restaurant</li>
+				 		</ul>
+				</div>
+
+				<div>
+				 	<h3>Assistante - Entre 2010 et 2014</h3>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">TOURISME - Conseil Général de Charente Maritime, La Rochelle (17) 7 mois (étés 2011 et 2014)</li>
+				 			<li class="description"> Gestion stocks, plannings, logistique, diffusion des brochures touristiques</li>
+				 		</ul>	
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">PRESSE - Société Générale, La Défense (92) - 6 mois (juin - nov 2012)</li>
+				 			<li class="description"> Prises RDV avec les journalistes, rédaction communiqués de presse, organisation de conférences</li>
+				 		</ul>
+				 		<ul class="liste_description">
+				 			<li class="sous-titre">ÉVÉNEMENTIEL - Strategic Event, Dijon (21) - 6 mois (sept 2010-fév 2011)</li>
+				 			<li class="description"> Gestion plannings, facturation, organisation de stands de conventions, rédaction dossier client</li>
+				 		</ul>
+				 </div>
 			</article>
 		</div>
 
 	</main>
-	</body>
 
-	<!--flex 3-->
-	<footer>Coded by me</footer>
+</body>
+
+<!--flex 3-->
+<footer>Coded by me</footer>
 
 </html>
