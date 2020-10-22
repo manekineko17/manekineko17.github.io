@@ -43,13 +43,13 @@ header{
 	align-items: center;
 	align-content: center;
 	width: 100%;
-	padding: 10px 10px 10px 10px;
-	margin: 10px 10px 30px 10px;
+	padding: 10px;
+	margin: 10px;
 	box-sizing: border-box;
 }
 
 #photo_identite > img{
-	width: 300px;
+	width: 250px;
 	border-radius: 50%;
 	padding: 5%;
 	margin: 5%;
@@ -78,7 +78,7 @@ header{
 	font-style: italic;
 	text-align: center;
 	line-height: 25px;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 10px 20px 10px 20px;
 	margin: 10px 20px 10px 20px;
 }
@@ -181,13 +181,13 @@ footer{
 /*******************************************/
 
 /*mobile :on screens that are 375px or less*/
-@media screen and (max-width: 375px) { 
+@media /*screen*/ all and (max-device-width: 480px) { //avant : 375px
 }
 
 
 /*tablet :on screens that are min 376px, set the followings*/
 @media screen and (max-width: 1094px) and (min-width: 834px) {
-	body{font-size: 20px;}
+	body{font-size: 15px;}
 
 	#titre{
 		display: flex;
@@ -196,31 +196,34 @@ footer{
 		justify-content: center;
 		align-items: flex-start;
 		align-content: center;
-	/*	padding: 0%;
-		margin: 0%;*/
 	}
 
 	#photo_identite > img{
-		width: 350px;
+		width: 300px;
 		padding-left: 5%;
 		margin-left: 20%;
 	}
+
+	.logo{height: 35px;}
+
 	#resume{
 		line-height: 35px;
-		font-size: 30px;
+		font-size: 20px;
 	}
 	aside{
 		line-height: 25px;
 	    padding: 5%;
+	    font-size: 15px;
 	}
 	.h2-aside{
 		padding: 2%;
 		margin: 2%;
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.formations-experiences{
 		padding: 5%;
 		margin: 2%;
+		font-size: 15px;
 	}
 	
 }
@@ -229,7 +232,7 @@ footer{
 
 /*desktop: on screens that are 1094px or more, set the followings */
 @media screen and (min-width: 1094px) {
-	body{font-size: 25px;}
+	body{font-size: 15px;}
 
 	ul { margin:10;
 	     padding:10;}
@@ -237,13 +240,13 @@ footer{
 	hr{width:60%;}
 
 	#photo_identite > img{
-		width: 450px;
+		width: 350px;
 		float: left;
 		padding: 2%;
 		margin: 2%;
 	}
 
-	.logo{height: 50px;}
+	.logo{height: 40px;}
 
 	#titre{
 		display: flex;
@@ -252,7 +255,8 @@ footer{
 		justify-content: space-around;
 		align-items: center;
 		align-content: center;
-		padding: 2%;
+		height: 370px;
+    	padding: 1%;
 		margin: 1%;
 	}
 
@@ -263,7 +267,7 @@ footer{
 	}
 
 	#resume{
-		font-size: 35px;
+		font-size: 25px;
 		padding: 10px 20px 10px 20px;
 		margin: 10px 20px 10px 20px;
 	}
@@ -274,7 +278,7 @@ footer{
 	}
 	aside{
 		width: 30%;
-		font-size: 20px;
+		font-size: 15px;
 		float: left;
 		padding: 2%;
 		margin: 2%;
@@ -289,7 +293,7 @@ footer{
 
 	.formations-experiences{
 	    width: 60%;
-	    font-size: 20px;
+	    font-size: 15px;
 	    float: right;
 	    padding: 2%;
 		margin: 2%;
@@ -305,5 +309,3 @@ footer{
 	}
 }
 
-/*id : utilisé une seule fois
-class: le même nom utilisable plusieurs fois*/
