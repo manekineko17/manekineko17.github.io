@@ -1,7 +1,8 @@
 # manekineko17.github.io
 CV Marine Grouiller
 
-First HTML CSS project.
-This resume is based on my paper resume.
+Premier projet en HTML et CSS : réalisation de mon CV en ligne basé sur le design de mon CV papier
 
-=> responsive under construction ;)
+First HTML CSS project : creating my online resume according to the design of my paper resume.
+
+
