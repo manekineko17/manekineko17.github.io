@@ -23,10 +23,9 @@ ul {
 }
 
 hr {
-  width: 50%;
-  height: 3px;
-  border-radius: 50%;
-  background: #d0826f;
+  width: 90%;
+  height: 1px;
+  background: black;
   text-align: center;
 }
 
@@ -50,7 +49,7 @@ header {
   box-sizing: border-box;
 }
 
-#photo_identite > img {
+#photo_identite>img {
   width: 250px;
   border-radius: 50%;
   padding: 5%;
@@ -138,6 +137,7 @@ progress[value]::-webkit-progress-value {
 .inside {
   list-style-position: inside;
 }
+
 /*centre d'intérets*/
 #interets {
   display: flex;
@@ -148,7 +148,7 @@ progress[value]::-webkit-progress-value {
   align-content: center;
 }
 
-#interets > img {
+#interets>img {
   width: 170px;
 }
 
@@ -167,6 +167,8 @@ progress[value]::-webkit-progress-value {
 .h2-form-exp {
   font-weight: bold;
   text-align: center;
+  color: #000000;
+  padding-bottom: 0.5em;
 }
 
 /*mise en page 1ere ligne <li> */
@@ -179,7 +181,7 @@ progress[value]::-webkit-progress-value {
 }
 
 h3 {
-  padding-top: 15px;
+  padding-top: 5px;
   color: #d0826f;
   font-weight: bolder;
 }
@@ -203,8 +205,7 @@ footer {
 /*******************************************/
 
 /*mobile :on screens that are 375px or less*/
-@media all and (max-device-width: 480px) {
-}
+@media all and (max-device-width: 480px) {}
 
 /*tablet :on screens that are min 376px, set the followings*/
 @media all and (max-width: 1094px) and (min-width: 834px) {
@@ -221,7 +222,7 @@ footer {
     align-content: center;
   }
 
-  #photo_identite > img {
+  #photo_identite>img {
     width: 300px;
     padding-left: 5%;
     margin-left: 20%;
@@ -235,16 +236,19 @@ footer {
     line-height: 35px;
     font-size: 20px;
   }
+
   aside {
     line-height: 25px;
     padding: 5%;
     font-size: 18px;
   }
+
   .h2-aside {
     padding: 2%;
     margin: 2%;
     font-size: 25px;
   }
+
   .formations-experiences {
     padding: 5%;
     margin: 2%;
@@ -269,7 +273,7 @@ footer {
     width: 60%;
   }
 
-  #photo_identite > img {
+  #photo_identite>img {
     width: 350px;
     float: left;
     padding: 2%;
@@ -308,6 +312,7 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   aside {
     width: 30%;
     font-size: 18px;
@@ -330,12 +335,13 @@ footer {
     padding: 2%;
     margin: 2%;
   }
+
   .liste_description {
     padding: 1%;
     margin: 1%;
   }
 
-  article > div {
+  article>div {
     padding: 1%;
     margin: 1%;
   }
